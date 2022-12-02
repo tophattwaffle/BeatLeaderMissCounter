@@ -1,0 +1,28 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
+  "id": "BeatLeaderMissCounter",
+  "name": "BeatLeaderMissCounter",
+  "author": "TopHATTwaffle",
+  "version": "0.0.1",
+  "description": "",
+  "gameVersion": "1.25.1",
+  "dependsOn": {
+    "BSIPA": "^4.2.0"
+  },
+  "features": {
+    "CountersPlus.CustomCounter": {
+      "Name": "BeatLeader Miss Counter",
+      "CounterLocation": "BeatLeaderMissCounter.CustomCounter",
+      "ConfigDefaults": {
+        "Enabled": true,
+        "Position": "BelowCombo",
+        "Distance": 0
+      },
+      "BSML": {
+        "Resource": "BeatLeaderMissCounter.SettingsUI.bsml",
+        "Host": "BeatLeaderMissCounter.BLMissCounterUIHost",
+        "Icon": "BeatLeaderMissCounter.icon.png"
+      }
+    }
+  }
+}
